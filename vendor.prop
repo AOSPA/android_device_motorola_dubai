@@ -33,6 +33,7 @@ arm64.memtag.process.system_server=off
 # Display
 debug.sf.disable_backpressure=1
 debug.sf.enable_hwc_vds=1
+ro.surface_flinger.enable_frame_rate_override=true
 ro.surface_flinger.set_idle_timer_ms=4000
 ro.surface_flinger.set_touch_timer_ms=4000
 ro.surface_flinger.set_display_power_timer_ms=1000
