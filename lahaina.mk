@@ -133,6 +133,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.beluga.s=0x900 \
     ro.vendor.beluga.t=0x240
 
+# qteeconnector settings
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.qteeconnector.retrying_interval=30 \
+    persist.vendor.qteeconnector.retrying_timeout=2000
+
 ###########
 # Target naming
 PRODUCT_NAME := lahaina
@@ -368,7 +373,17 @@ PRODUCT_FULL_TREBLE_OVERRIDE := true
 PRODUCT_VENDOR_MOVE_ENABLED := true
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 BOARD_SYSTEMSDK_VERSIONS := 30
-BOARD_VNDK_VERSION := current
+ifeq (true,$(BUILDING_WITH_VSDK))
+    ALLOW_MISSING_DEPENDENCIES := true
+    TARGET_SKIP_CURRENT_VNDK := true
+    BOARD_VNDK_VERSION := 30
+    RECOVERY_SNAPSHOT_VERSION := 30
+    RAMDISK_SNAPSHOT_VERSION := 30
+else
+    BOARD_VNDK_VERSION := current
+    RECOVERY_SNAPSHOT_VERSION := current
+    RAMDISK_SNAPSHOT_VERSION := current
+endif
 TARGET_MOUNT_POINTS_SYMLINKS := false
 
 # FaceAuth feature
