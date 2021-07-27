@@ -60,6 +60,7 @@ BOARD_KERNEL_CMDLINE += ip6table_raw.raw_before_defrag=1 androidboot.hab.csv=8
 BOARD_KERNEL_CMDLINE += firmware_class.path=/vendor/firmware_mnt/image
 BOARD_KERNEL_CMDLINE += androidboot.hab.product=dubai
 BOARD_KERNEL_PAGESIZE    := 4096
+BOARD_RAMDISK_USE_LZ4 := true
 KERNEL_DEFCONFIG := dubai-qgki_defconfig
 
 # Partitions - A/B
