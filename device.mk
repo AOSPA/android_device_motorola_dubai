@@ -134,5 +134,8 @@ PRODUCT_CHARACTERISTICS := nosdcard
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
+# VNDK
+PRODUCT_EXTRA_VNDK_VERSIONS := 30
+
 # Proprietary Vendor
 $(call inherit-product, vendor/motorola/dubai/dubai-vendor.mk)
