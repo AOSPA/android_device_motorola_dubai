@@ -252,6 +252,7 @@ PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
 
 # NFC
+TARGET_USES_ST_AIDL_NFC := true
 $(call inherit-product, hardware/st/nfc/nfc_vendor_product.mk)
 
 PRODUCT_COPY_FILES += \
