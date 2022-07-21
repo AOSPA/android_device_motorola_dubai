@@ -145,7 +145,6 @@ PRODUCT_CHARACTERISTICS := nosdcard
 # Treble
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
-TARGET_MOUNT_POINTS_SYMLINKS := false
 
 # Proprietary Vendor
 $(call inherit-product, vendor/motorola/dubai/dubai-vendor.mk)
