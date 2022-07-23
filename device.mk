@@ -95,6 +95,11 @@ PRODUCT_PACKAGES += \
     init.qti.chg_policy.sh \
     init.qti.qcv.sh
 
+# Keymaster
+PRODUCT_PACKAGES += \
+   android.hardware.keymaster@4.1 \
+   android.hardware.keymaster@4.1.vendor
+
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.lights-service.qti \
