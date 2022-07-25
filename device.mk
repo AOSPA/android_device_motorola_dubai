@@ -127,6 +127,10 @@ PRODUCT_PACKAGES += \
 DEVICE_MANIFEST_FILE := device/motorola/dubai/manifest_yupik.xml
 DEVICE_MATRIX_FILE := device/qcom/common/compatibility_matrix.xml
 
+# Namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
+
 # Partitions - Dynamic
 PRODUCT_BUILD_ODM_IMAGE := true
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
