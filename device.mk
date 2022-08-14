@@ -4,8 +4,6 @@ HARDWARE_PATH := hardware/motorola
 QCOM_COMMON_PATH := device/qcom/common
 
 # A/B
-ENABLE_AB ?= true
-ENABLE_VIRTUAL_AB := true
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 
 PRODUCT_PACKAGES += \
