@@ -128,11 +128,6 @@ PRODUCT_PACKAGES += \
    android.hardware.keymaster@4.1 \
    android.hardware.keymaster@4.1.vendor
 
-# Lights
-PRODUCT_PACKAGES += \
-    android.hardware.lights-service.qti \
-    lights.qcom
-
 # Manifests
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/vintf/manifest_yupik.xml
 DEVICE_MATRIX_FILE := $(QCOM_COMMON_PATH)/compatibility_matrix.xml
