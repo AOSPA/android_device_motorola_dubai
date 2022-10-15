@@ -31,6 +31,7 @@ persist.data.df.ul_mode=5
 arm64.memtag.process.system_server=off
 
 # Display
+debug.sf.disable_backpressure=1
 debug.sf.enable_hwc_vds=1
 ro.surface_flinger.refresh_rate_switching=true
 ro.surface_flinger.use_content_detection_for_refresh_rate=true
