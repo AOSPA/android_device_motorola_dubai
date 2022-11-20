@@ -152,6 +152,8 @@ PRODUCT_PACKAGES += \
 # Manifests
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest_yupik.xml
 DEVICE_MATRIX_FILE := $(QCOM_COMMON_PATH)/compatibility_matrix.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
+    $(DEVICE_PATH)/dubai_vendor_framework_compatibility_matrix.xml
 
 # Moto Actions
 PRODUCT_PACKAGES += \
