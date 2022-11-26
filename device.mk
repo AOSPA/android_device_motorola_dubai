@@ -72,6 +72,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 PRODUCT_PACKAGES += \
     fs_config_files
 
+TARGET_FS_CONFIG_GEN += $(DEVICE_PATH)/configs/mot_aids.fs
+
 # Fingerprint
 TARGET_BUILDS_OSS_BIOMETRICS := true
 TARGET_USES_FOD_ZPOS := true
