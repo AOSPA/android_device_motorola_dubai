@@ -42,7 +42,7 @@ PRODUCT_PACKAGES += fastbootd
 # Add default implementation of fastboot HAL.
 PRODUCT_PACKAGES += android.hardware.fastboot@1.0-impl-mock
 
-PRODUCT_COPY_FILES += $(LOCAL_PATH)/default/fstab.qcom:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.default
+PRODUCT_COPY_FILES += $(LOCAL_PATH)/init/fstab.default:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.default
 
 BOARD_AVB_VBMETA_SYSTEM := system system_ext product
 BOARD_AVB_VBMETA_SYSTEM_KEY_PATH := external/avb/test/data/testkey_rsa2048.pem
@@ -217,8 +217,27 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.opengles.aep.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.opengles.aep.xml
 
-#Charger
-PRODUCT_COPY_FILES += $(LOCAL_PATH)/charger_fw_fstab.qti:$(TARGET_COPY_OUT_VENDOR)/etc/charger_fw_fstab.qti
+# Init
+PRODUCT_PACKAGES += \
+    charger_fstab.qti \
+    charger_fw_fstab.qti \
+    fstab.default \
+    init.mmi.charge_only.rc \
+    init.mmi.chipset.rc \
+    init.mmi.overlay.rc \
+    init.mmi.rc \
+    init.qti.qcv.rc \
+    init.target.rc \
+    init.vendor.st21nfc.rc \
+    ueventd.dubai.rc
+
+PRODUCT_PACKAGES += \
+    init.mmi.boot.sh \
+    init.mmi.touch.sh \
+    init.oem.hw.sh \
+    init.qcom.sensors.sh \
+    init.qti.chg_policy.sh \
+    init.qti.qcv.sh
 
 PRODUCT_ENABLE_QESDK := true
 

@@ -1,0 +1,115 @@
+prebuilt_etc {
+    name: "charger_fstab.qti",
+    src: "charger_fstab.qti",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "charger_fw_fstab.qti",
+    src: "charger_fw_fstab.qti",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "fstab.default",
+    src: "fstab.default",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.mmi.boot.sh",
+    src: "init.mmi.boot.sh",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.mmi.charge_only.rc",
+    src: "init.mmi.charge_only.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.mmi.chipset.rc",
+    src: "init.mmi.chipset.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.mmi.overlay.rc",
+    src: "init.mmi.overlay.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.mmi.rc",
+    src: "init.mmi.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.mmi.touch.sh",
+    src: "init.mmi.touch.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.oem.hw.sh",
+    src: "init.oem.hw.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.qcom.sensors.sh",
+    src: "init.qcom.sensors.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.qti.chg_policy.sh",
+    src: "init.qti.chg_policy.sh",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.qti.qcv.rc",
+    src: "init.qti.qcv.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.qti.qcv.sh",
+    src: "init.qti.qcv.sh",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.target.rc",
+    src: "init.target.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.vendor.st21nfc.rc",
+    src: "init.vendor.st21nfc.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "ueventd.dubai.rc",
+    filename: "ueventd.rc",
+    src: "ueventd.dubai.rc",
+    device_specific: true,
+}
+
+sh_binary {
+    name: "vendor_modprobe.sh",
+    src: "vendor_modprobe.sh",
+    vendor: true,
+}

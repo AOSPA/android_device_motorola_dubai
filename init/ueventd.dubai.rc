@@ -1,0 +1,39 @@
+#
+# Copyright (C) 2023 Paranoid Android
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+# Firmware directory Path
+# Below macro will be read by uevent and path will
+# be added to search path for firmware loading
+firmware_directories /vendor/firmware_mnt/image/
+
+# Goodix fingerprint device
+/dev/goodix_fp            0660   system     system
+
+# EgisTech fingerprint device
+/dev/esfp0                0660   system     system
+
+# Change permission for FPC fingerprint
+/sys/class/fingerprint/fpc1020 nav        0440     system    system
+/sys/class/fingerprint/fpc1020 irq        0440     system    system
+/sys/class/fingerprint/fpc1020 irq_cnt    0440     system    system
+/sys/class/fingerprint/fpc1020 dev_enable 0220     system    system
+/sys/class/fingerprint/fpc1020 vendor     0444     system    system
+
+# Add device block for MISC
+/dev/block/platform/soc/7464900.sdhci/by-name/misc       0660   root     system
+/dev/block/platform/soc/624000.ufshc/by-name/misc        0660   root     system
+/dev/block/platform/soc/1da4000.ufshc/by-name/misc       0660   root     system
+/dev/block/platform/soc/c0c4000.sdhci/by-name/misc       0660   root     system
+/dev/block/platform/soc/1d84000.ufshc/by-name/misc       0660   root     system
+/dev/block/platform/soc/7c4000.sdhci/by-name/misc        0660   root     system
+/dev/block/platform/soc/4744000.sdhci/by-name/misc       0660   root     system
+/dev/block/platform/soc/4804000.ufshc/by-name/misc       0660   root     system
+
+# I2C
+/dev/i2c-*                0660   system     system
+
+# NFC ST Driver permissions
+/dev/st21nfc              0660   nfc        nfc
