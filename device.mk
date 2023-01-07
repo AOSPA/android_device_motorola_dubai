@@ -290,9 +290,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += $(DEVICE_PATH)/init/fstab.default:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.default
 
-# Partitions - FRP
-BOARD_FRP_PARTITION_NAME := frp
-
 # Partitions - Super
 PRODUCT_BUILD_SUPER_PARTITION := false
 
