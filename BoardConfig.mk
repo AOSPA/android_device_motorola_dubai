@@ -44,7 +44,6 @@ BOARD_INCLUDE_RECOVERY_DTBO := true
 
 # Kernel
 BOARD_KERNEL_BASE        := 0x00000000
-BOARD_DO_NOT_STRIP_VENDOR_MODULES := true
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8
 BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom androidboot.console=ttyMSM0
 BOARD_KERNEL_CMDLINE += androidboot.memcg=1 lpm_levels.sleep_disabled=1

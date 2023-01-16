@@ -614,31 +614,6 @@ if [ ! -z "$dead_touch" ]; then
 	return 0
 fi
 
-if [ -f /vendor/lib/modules/utags.ko ]; then
-	notice "loading utag driver"
-	insmod /vendor/lib/modules/utags.ko
-	if [ $? -ne 0 ]; then
-		gki_modules_full_path=`find /vendor/lib/modules -name "*-gki"`
-		if [ -n "$gki_modules_full_path" ]; then
-			gki_modules_path=`basename $gki_modules_full_path`
-			notice "loading gki utag driver in /vendor/lib/modules/$gki_modules_path"
-			insmod /vendor/lib/modules/$gki_modules_path/utags.ko
-			if [ $? -ne 0 ]; then
-				notice "fail to load /vendor/lib/modules/$gki_modules_path/utags.ko"
-				setprop ro.vendor.mot.gki.path "."
-			else
-				notice "successfully load /vendor/lib/modules/$gki_modules_path/utags.ko"
-				setprop ro.vendor.mot.gki.path $gki_modules_path
-			fi
-		else
-			notice "fail to load utag driver"
-			setprop ro.vendor.mot.gki.path "."
-		fi
-	else
-		setprop ro.vendor.mot.gki.path "."
-	fi
-fi
-
 notice "checking integrity"
 # check necessary components exist and just proceed
 # with RO properties setup otherwise

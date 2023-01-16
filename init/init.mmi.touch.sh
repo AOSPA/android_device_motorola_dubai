@@ -23,7 +23,6 @@ touch_vendor=
 touch_path=
 panel_path=/sys/devices/virtual/graphics/fb0
 oem_panel_script=/vendor/bin/init.oem.panel.sh
-dlkm_path=/vendor/lib/modules
 device_property=ro.vendor.hw.device
 hwrev_property=ro.vendor.hw.revision
 firmware_path=/vendor/firmware
@@ -385,16 +384,6 @@ query_panel_info()
 	fi
 }
 
-load_driver_modules()
-{
-	if [ "$supplier" ]; then
-		if [ -f $oem_panel_script ]; then
-			debug "load_driver_modules()"
-			$oem_panel_script -s $supplier
-		fi
-	fi
-}
-
 search_firmware_file()
 {
 	local match_not_found
@@ -416,22 +405,6 @@ search_firmware_file()
 		fi
 	fi
 	return 0
-}
-
-reload_modules()
-{
-	local rc
-	local module
-	for module in $*; do
-		[ -f $dlkm_path/$module.ko ] || continue
-		notice "Reloading [$module.ko]..."
-		rmmod $module
-		rc=$?
-		[ $rc != 0 ] && notice "Unloading [$module] failed: $rc"
-		insmod $dlkm_path/$module.ko
-		rc=$?
-		[ $rc != 0 ] && notice "Loading [$module] failed: $rc"
-	done
 }
 
 run_firmware_upgrade()
@@ -493,7 +466,6 @@ run_firmware_upgrade()
 			notice "forcing F54 registers update"
 			echo 1 > $touch_path/f54/force_update
 			notice "need to reload F54"
-			reload_modules "synaptics_dsx_test_reporting"
 		fi
 	fi
 	return 0
@@ -600,7 +572,6 @@ process_touch_instance()
 
 # Main starts here
 query_panel_info
-load_driver_modules
 [ -d $touch_class_path ] || error_and_leave 8
 debug "sysfs panel path: $panel_path"
 product_id=$(getprop $device_property 2> /dev/null)
@@ -616,9 +587,5 @@ cd $firmware_path
 for touch_instance in $(ls $touch_class_path); do
 	process_touch_instance &
 done
-
-# check if need to reload modules
-wait
-debug "all background processes completed"
 
 return 0

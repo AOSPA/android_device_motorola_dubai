@@ -89,10 +89,6 @@ PRODUCT_PACKAGES += \
     init.qti.chg_policy.sh \
     init.qti.qcv.sh
 
-# Kernel Modules
-KERNEL_MODULES_INSTALL := dlkm
-KERNEL_MODULES_OUT := out/target/product/$(PRODUCT_NAME)/$(KERNEL_MODULES_INSTALL)/lib/modules
-
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.lights-service.qti \
