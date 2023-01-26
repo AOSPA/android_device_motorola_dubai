@@ -5,6 +5,9 @@ audio.offload.min.duration.secs=60
 audio.offload.video=false
 media.aac_51_output_enabled=true
 
+# Brightness Curve
+persist.sys.brightness.low.gamma=true
+
 # Charger
 ro.charger.enable_suspend=1
 
