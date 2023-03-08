@@ -1,0 +1,4 @@
+runtime_resource_overlay {
+    name: "SettingsResDubai",
+    device_specific: true,
+}
