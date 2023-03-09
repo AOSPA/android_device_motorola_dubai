@@ -1,3 +1,8 @@
+# Directories of dependent local repositories
+DEVICE_PATH := device/motorola/dubai
+HARDWARE_PATH := hardware/motorola
+QCOM_COMMON_PATH := device/qcom/common
+
 # A/B
 ENABLE_AB ?= true
 ENABLE_VIRTUAL_AB := true
@@ -142,12 +147,12 @@ PRODUCT_PACKAGES += \
     lights.qcom
 
 # Manifests
-DEVICE_MANIFEST_FILE := device/motorola/dubai/manifest_yupik.xml
-DEVICE_MATRIX_FILE := device/qcom/common/compatibility_matrix.xml
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest_yupik.xml
+DEVICE_MATRIX_FILE := $(QCOM_COMMON_PATH)/compatibility_matrix.xml
 
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(DEVICE_PATH)
 
 # Neural networks
 PRODUCT_PACKAGES += \
@@ -161,7 +166,7 @@ PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.0-impl-mock \
     fastbootd
 
-PRODUCT_COPY_FILES += $(LOCAL_PATH)/init/fstab.default:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.default
+PRODUCT_COPY_FILES += $(DEVICE_PATH)/init/fstab.default:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.default
 
 $(call inherit-product, build/make/target/product/gsi_keys.mk)
 
@@ -226,11 +231,11 @@ PRODUCT_EXTRA_VNDK_VERSIONS := 30
 
 # WLAN
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/wifi/qca6390/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/qca6390/WCNSS_qcom_cfg.ini \
-    $(LOCAL_PATH)/configs/wifi/qca6750/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/qca6750/WCNSS_qcom_cfg.ini \
-    $(LOCAL_PATH)/configs/wifi/wlan/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wlan/WCNSS_qcom_cfg.ini \
-    $(LOCAL_PATH)/configs/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
-    $(LOCAL_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
+    $(DEVICE_PATH)/configs/wifi/qca6390/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/qca6390/WCNSS_qcom_cfg.ini \
+    $(DEVICE_PATH)/configs/wifi/qca6750/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/qca6750/WCNSS_qcom_cfg.ini \
+    $(DEVICE_PATH)/configs/wifi/wlan/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wlan/WCNSS_qcom_cfg.ini \
+    $(DEVICE_PATH)/configs/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
+    $(DEVICE_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
 
 # Proprietary Vendor
 $(call inherit-product, vendor/motorola/dubai/dubai-vendor.mk)
