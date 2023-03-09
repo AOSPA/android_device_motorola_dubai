@@ -150,6 +150,10 @@ PRODUCT_PACKAGES += \
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest_yupik.xml
 DEVICE_MATRIX_FILE := $(QCOM_COMMON_PATH)/compatibility_matrix.xml
 
+# Moto Actions
+PRODUCT_PACKAGES += \
+    MotoActions
+
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH)
