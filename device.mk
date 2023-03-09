@@ -88,6 +88,9 @@ PRODUCT_PACKAGES += \
     fs_config_files
 
 # Fingerprint
+TARGET_BUILDS_OSS_BIOMETRICS := true
+TARGET_USES_FOD_ZPOS := true
+
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
 

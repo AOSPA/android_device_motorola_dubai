@@ -139,24 +139,29 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>default</instance>
         </interface>
     </hal>
-    <!-- fingerprint hal: using remote service instead of Google's default service-->
-    <hal format="hidl">
-        <name>android.hardware.biometrics.fingerprint</name>
+    <!-- Fingerprint HAL Service -->
+    <hal format="hidl" override="true">
+        <name>com.motorola.hardware.biometric.fingerprint</name>
         <transport>hwbinder</transport>
-        <version>2.3</version>
+        <version>1.0</version>
         <interface>
-            <name>IBiometricsFingerprint</name>
+            <name>IMotoFingerPrint</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IMotoFingerPrintSensorTest</name>
             <instance>default</instance>
         </interface>
     </hal>
     <hal format="hidl">
-        <name>vendor.qti.hardware.fingerprint</name>
+        <name>vendor.egistec.hardware.fingerprint</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
+        <version>4.0</version>
         <interface>
-            <name>IQtiExtendedFingerprint</name>
+            <name>IBiometricsFingerprintRbs</name>
             <instance>default</instance>
         </interface>
+        <fqname>@4.0::IBiometricsFingerprintRbs/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.keymaster</name>
