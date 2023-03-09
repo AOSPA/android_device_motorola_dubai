@@ -237,5 +237,8 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     $(DEVICE_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
 
+# Hardware Motorola
+$(call inherit-product, $(HARDWARE_PATH)/common.mk)
+
 # Proprietary Vendor
 $(call inherit-product, vendor/motorola/dubai/dubai-vendor.mk)
