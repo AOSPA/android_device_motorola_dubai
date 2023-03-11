@@ -1,0 +1,4 @@
+runtime_resource_overlay {
+    name: "FrameworksResDubaiAOSPA",
+    system_ext_specific: true,
+}
