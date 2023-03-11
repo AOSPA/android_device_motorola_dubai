@@ -279,6 +279,7 @@ PRODUCT_PACKAGES += \
     FrameworksResDubai \
     FrameworksResDubaiAOSPA \
     SettingsResDubai \
+    SettingsProviderResDubai \
     SystemUIResDubai \
     TelephonyResDubai \
     WifiResTargetDubai
