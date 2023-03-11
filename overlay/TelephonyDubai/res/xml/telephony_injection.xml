@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2023 Paranoid Android
+     SPDX-License-Identifier: Apache-2.0
+-->
+<!-- package: customized component factory to inject,
+        e.g. "example.package.exampleTelephonyComponentFactory"
+     jar: jar path to customized jar which contains exampleTelephonyComponentFactory to inject, and
+     "/system/framework/" should be the target directory.
+        e.g. "/system/framework/eg-telephony-common.jar"
+-->
+<injection package=""
+           jar="">
+    <components>
+        <!-- Components use injected component factory,
+            e.g. com.android.internal.telephony.ServiceStateTracker
+        -->
+        <!--<component>com.example.componentA</component>-->
+        <!--<component>com.example.componentB</component>-->
+    </components>
+</injection>

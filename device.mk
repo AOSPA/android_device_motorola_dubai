@@ -279,6 +279,7 @@ PRODUCT_PACKAGES += \
     FrameworksResDubaiAOSPA \
     SettingsResDubai \
     SystemUIResDubai \
+    TelephonyResDubai \
     WifiResTargetDubai
 
 # Partitions - Dynamic
