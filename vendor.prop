@@ -70,9 +70,6 @@ ro.telephony.default_network=33,33
 # RTT
 config.disable_rtt=true
 
-# SOC manufacturer
-ro.soc.manufacturer=QTI
-
 # SPU
 vendor.gatekeeper.disable_spu=true
 
