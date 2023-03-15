@@ -324,10 +324,6 @@ TARGET_COMMON_QTI_COMPONENTS += \
     wfd \
     wlan
 
-# RenderScript
-PRODUCT_PACKAGES += \
-    android.hardware.renderscript@1.0-impl
-
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
