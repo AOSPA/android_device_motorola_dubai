@@ -1060,7 +1060,6 @@ system/etc/permissions/moto-telephony.xml:system_ext/etc/permissions/moto-teleph
 system/framework/moto-telephony.jar:system_ext/framework/moto-telephony.jar|2e9d2df391a4a669e32fdf980c804f7a67617f61
 
 # NFC (Configs)
-vendor/etc/libnfc-hal-st.conf
 vendor/etc/libnfc-nci-st.conf
 vendor/etc/st21nfc_conf_ds.txt
 vendor/etc/st21nfc_conf_ss.txt

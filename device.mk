@@ -254,6 +254,9 @@ PRODUCT_PACKAGES += \
 # NFC
 $(call inherit-product, hardware/st/nfc/nfc_vendor_product.mk)
 
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/nfc/libnfc-hal-st.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-hal-st.conf
+
 PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.2.vendor \
     com.android.nfc_extras \
