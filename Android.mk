@@ -66,16 +66,8 @@ $(RFS_MSM_WPSS_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	$(hide) ln -sf /vendor/firmware_mnt $@/readonly/firmware
 	$(hide) ln -sf /vendor/firmware $@/readonly/vendor/firmware
 
-WLAN_FIRMWARE_SYMLINKS := $(TARGET_OUT_VENDOR)/firmware/wlan/qca_cld
-$(WLAN_FIRMWARE_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
-	@echo "Creating WLAN firmware symlinks: $@"
-	@mkdir -p $@/wlan
-	@mkdir -p $@/qca6750
-	$(hide) ln -sf /mnt/vendor/persist/wlan/wlan_mac.bin $@/wlan/wlan_mac.bin
-	$(hide) ln -sf /vendor/etc/wifi/WCNSS_qcom_cfg.ini $@/qca6750/WCNSS_qcom_cfg.ini
-
 ALL_DEFAULT_INSTALLED_MODULES += $(RFS_MSM_ADSP_SYMLINKS) $(RFS_MSM_CDSP_SYMLINKS) $(RFS_MSM_MPSS_SYMLINKS) \
-                                 $(RFS_MSM_WPSS_SYMLINKS) $(RFS_MSM_SLPI_SYMLINKS) $(WLAN_FIRMWARE_SYMLINKS)
+                                 $(RFS_MSM_WPSS_SYMLINKS) $(RFS_MSM_SLPI_SYMLINKS)
 
 IMS_LIBRARIES := libimscamera_jni.so libimsmedia_jni.so
 IMS_SYMLINKS := $(addprefix $(TARGET_OUT_SYSTEM_EXT_APPS_PRIVILEGED)/ims/lib/arm64/,$(notdir $(IMS_LIBRARIES)))
@@ -103,5 +95,14 @@ $(EXPAT_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	$(hide) ln -sf motobox $@
 
 ALL_DEFAULT_INSTALLED_MODULES += $(EXPAT_SYMLINKS)
+
+# WLAN
+WLAN_CHIPSETS := wlan qca6750 qca6390
+$(foreach chip, $(WLAN_CHIPSETS), \
+	$(shell mkdir -p $(TARGET_OUT_VENDOR)/firmware/wlan/qca_cld/$(chip); \
+	ln -sf /vendor/etc/wifi/$(chip)/WCNSS_qcom_cfg.ini \
+	$(TARGET_OUT_VENDOR)/firmware/wlan/qca_cld/$(chip)/WCNSS_qcom_cfg.ini; \
+	ln -sf /mnt/vendor/persist/wlan/wlan_mac.bin \
+	$(TARGET_OUT_VENDOR)/firmware/wlan/qca_cld/$(chip)/wlan_mac.bin))
 
 endif
