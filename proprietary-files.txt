@@ -617,8 +617,6 @@ vendor/lib/libswregistrationalgo.so
 vendor/lib/libsynx.so
 vendor/lib/libtfestriping.so
 vendor/lib/libthreadutils.so
-vendor/lib/libvideooptfeature.so
-vendor/lib/libvideoutils.so
 vendor/lib/libvidhance.so
 vendor/lib/libvidhance_active_ois.so
 vendor/lib/libvidhance_dmbr.so
@@ -715,7 +713,6 @@ vendor/lib64/libswregistrationalgo.so
 vendor/lib64/libsynx.so
 vendor/lib64/libtfestriping.so
 vendor/lib64/libthreadutils.so
-vendor/lib64/libvideooptfeature.so
 vendor/lib64/libvidhance.so
 vendor/lib64/libvidhance_active_ois.so
 vendor/lib64/libvidhance_dmbr.so
@@ -1022,7 +1019,6 @@ vendor/etc/media_codecs_performance_yupik_v1.xml
 vendor/etc/media_codecs_vendor_audio.xml
 vendor/etc/media_codecs_yupik_v0.xml
 vendor/etc/media_codecs_yupik_v1.xml
-vendor/etc/media_profiles.xml
 vendor/etc/media_profiles_V1_0.xml
 vendor/etc/media_profiles_vendor.xml
 vendor/etc/media_profiles_yupik_v0.xml
@@ -1033,26 +1029,11 @@ system_ext/lib/libmmosal.so
 system_ext/lib/libmmparser_lite.so
 system_ext/lib64/libmmosal.so
 system_ext/lib64/libmmparser_lite.so
-vendor/bin/hw/vendor.qti.media.c2@1.0-service
-vendor/bin/init.qti.media.sh
-vendor/etc/init/init.qti.media.rc
-vendor/etc/init/vendor.qti.media.c2@1.0-service.rc
 vendor/etc/media/video_system_specs.json
 vendor/etc/media_yupik_v0/video_system_specs.json
 vendor/etc/media_yupik_v1/video_system_specs.json
-vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy
-vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy
 -vendor/etc/vintf/manifest/vendor.dolby.media.c2@1.0-service.xml
-vendor/etc/video_system_specs.json
 vendor/lib/libmmosal.so
-vendor/lib/libqc2vppfilter.so
-vendor/lib/libqcodec2_base.so
-vendor/lib/libqcodec2_basecodec.so
-vendor/lib/libqcodec2_core.so
-vendor/lib/libqcodec2_hooks.so
-vendor/lib/libqcodec2_platform.so
-vendor/lib/libqcodec2_utils.so
-vendor/lib/libqcodec2_v4l2codec.so
 vendor/lib64/libmmosal.so
 
 # Motorola Telephony - from tundra_g-user 12 S3SJ32.1-86-2 3d4dd3 release-keys
@@ -1644,30 +1625,18 @@ vendor/firmware/tianma_goodix_cfg_group.bin
 vendor/firmware/tianma_goodix_test_limits_255.csv
 
 # VPP
-vendor/bin/hw/qconfigservice
 vendor/bin/vppservice
 vendor/etc/configstore/vpp.configstore.xml
-vendor/etc/init/qconfig.rc
 vendor/etc/init/vppservice.rc
-vendor/lib/libqconfigclient.so
 vendor/lib/libvppclient.so
 vendor/lib/libvpphcp.so
 vendor/lib/libvpphvx.so
 vendor/lib/libvpplibrary.so
-vendor/lib/vendor.qti.hardware.qconfig@1.0.so
-vendor/lib/vendor.qti.hardware.vpp@1.1.so
-vendor/lib/vendor.qti.hardware.vpp@1.2.so
-vendor/lib/vendor.qti.hardware.vpp@1.3.so
 vendor/lib/vendor.qti.hardware.vpp@2.0.so
-vendor/lib64/libqconfigclient.so
 vendor/lib64/libvppclient.so
 vendor/lib64/libvpphcp.so
 vendor/lib64/libvpphvx.so
 vendor/lib64/libvpplibrary.so
-vendor/lib64/vendor.qti.hardware.qconfig@1.0.so
-vendor/lib64/vendor.qti.hardware.vpp@1.1.so
-vendor/lib64/vendor.qti.hardware.vpp@1.2.so
-vendor/lib64/vendor.qti.hardware.vpp@1.3.so
 vendor/lib64/vendor.qti.hardware.vpp@2.0.so
 
 # VPU firmware
