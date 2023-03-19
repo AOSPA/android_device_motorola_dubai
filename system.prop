@@ -39,10 +39,6 @@ persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
 ro.qcom.ims.use_moto_vt_ext=true
 
-# Media
-media.settings.xml=/vendor/etc/media_profiles_vendor.xml
-ro.media.recorder-max-base-layer-fps=60
-
 # Netmgrd
 persist.vendor.data.mode=concurrent
 ro.vendor.use_data_netmgrd=true
