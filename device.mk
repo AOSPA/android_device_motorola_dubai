@@ -4,7 +4,9 @@ HARDWARE_PATH := hardware/motorola
 QCOM_COMMON_PATH := device/qcom/common
 
 # A/B
-$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/android_t_baseline.mk)
+PRODUCT_VIRTUAL_AB_COMPRESSION_METHOD := gz
 
 PRODUCT_PACKAGES += \
     update_engine \
