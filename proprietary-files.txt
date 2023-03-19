@@ -1032,7 +1032,6 @@ system_ext/lib64/libmmparser_lite.so
 vendor/etc/media/video_system_specs.json
 vendor/etc/media_yupik_v0/video_system_specs.json
 vendor/etc/media_yupik_v1/video_system_specs.json
--vendor/etc/vintf/manifest/vendor.dolby.media.c2@1.0-service.xml
 vendor/lib/libmmosal.so
 vendor/lib64/libmmosal.so
 
