@@ -50,6 +50,24 @@
       "message": "can u please confirm, jake",
       "revId": "5b0c10cba66d34b2d413f578d8d8a832082069a9",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bf10458f_8fef805b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000551
+      },
+      "writtenOn": "2023-03-21T02:10:25Z",
+      "side": 1,
+      "message": "I\u0027d say just grep for the flag in the kernel, it should show up in drivers/staging/qcacld-3.0 if it exists - preferably https://github.com/AOSPA/android_kernel_motorola_sm7325/blob/f9b74415787e3d088577b22bffbe9748955d8a43/drivers/staging/qcacld-3.0/core/hdd/inc/hdd_dp_cfg.h\non my looking, there\u0027s nothing so I don\u0027t think it\u0027s present",
+      "parentUuid": "3d0f2c27_4ddfae03",
+      "revId": "5b0c10cba66d34b2d413f578d8d8a832082069a9",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
