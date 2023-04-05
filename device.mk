@@ -109,6 +109,9 @@ $(call inherit-product, vendor/qcom/opensource/dataservices/dataservices_vendor_
 
 # Display
 PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/display/display_id_4630947043778501762.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947043778501762.xml
+
+PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.se.omapi.uicc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.se.omapi.uicc.xml
 
 PRODUCT_PACKAGES += \
