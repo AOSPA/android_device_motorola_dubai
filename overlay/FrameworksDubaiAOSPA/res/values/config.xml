@@ -6,4 +6,8 @@
 <resources>
     <!-- Fingerprint from stock ROM -->
     <string name="config_stockFingerprint" translatable="false">motorola/dubai_g/dubai:12/S1RDS32.55-106-3/98ea12:user/release-keys</string>
+
+    <!-- Defines the sysfs attribute path used by the device
+         to enable/disable DC dimming. -->
+    <string name="config_deviceDcDimmingSysfsNode">/sys/devices/platform/soc/soc:qcom,dsi-display-primary/dsi_display_dc</string>
 </resources>
