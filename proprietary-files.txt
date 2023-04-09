@@ -741,11 +741,10 @@ vendor/etc/qdcm_calib_data_nt36672e_fhd_plus_144Hz_video_panel.xml
 
 # Display (HDR)
 vendor/etc/hdr_tm_config.xml
-vendor/lib64/libhdr_tm.so
 vendor/lib64/libhdrdynamic.so
 vendor/lib64/libhdrdynamicootf.so
 
-# Display - from LA.UM.9.14.r1-20200.01-LAHAINA.QSSI12.0
+# Display - from LA.UM.9.14.r1-21000-LAHAINA.QSSI12.0
 vendor/bin/hw/vendor.display.color@1.0-service|347fda7fe824e405829e1772739e999937421a58
 vendor/bin/feature_enabler_client|86f0eed3ab235986d009b22c60f0a73b136d8e36
 vendor/bin/ppd|4fcb818e39c813570fdbfaa9726274986e190e04
@@ -758,29 +757,17 @@ vendor/etc/display/advanced_sf_offsets.xml|e145a0c0f975f6d924fbe7f18f531ae044ec3
 vendor/etc/init/feature_enabler_client.rc|7c8e7cf20093d1a6d94d7de2debd53a7e51f8c29
 vendor/etc/init/qdcmss.rc|53d78d686678c4f923a9ec4ace7d4d3575b13788
 vendor/etc/init/vendor.display.color@1.0-service.rc|5ad673f879b3685a0e79b5633437e5499cb94f48
-vendor/etc/snapdragon_color_libs_config.xml|20be96679760b14cd63577a17f4a040e543254dd
-vendor/lib64/libdisp-aba.so|5c8ad123fb335a74bd573587924f93ac812594fd
-vendor/lib64/libdisplayqos.so|aa222f4c1a2d2fb60944c44f8a82621d6bc75184
-vendor/lib64/libdisplayskuutils.so|d467f3bcaeafa6ed9de62afe2c00a3be46f4bb0f
-vendor/lib64/libdpps.so|c0a095d4230ed48c80c54f8ad1fcb28764a73d97
-vendor/lib64/libqdcm-mode-parser.so|207143ab4dda0886bde2a0333d7a1bcd7af6f8e1
-vendor/lib64/libqseed3.so|d62c37baf259250cadfcff8734e82054ed87bb96
+vendor/lib64/libdisp-aba.so|3ff1c1d30d96c3ce3608378b2afcc75b892845cb
+vendor/lib64/libdpps.so|9caf32a0d3636af579ea6e1a6c5638a16ed19444
 vendor/lib64/librcmask.so|8feb479fe590b6aec282ce3342574d9113f80516
-vendor/lib64/libsdm-color.so|a83576915a146492d430711e273b9af9a95d4fed
 vendor/lib64/libsdm-colormgr-algo.so|5416a3b9b0735099c9b86f451f41386711787ea4
-vendor/lib64/libsdm-diag.so|393c9ad3e3ad3210515900627f65bf6e3633226e
-vendor/lib64/libsdm-disp-vndapis.so|dc3ff8c971bbcb0d1b9e5079324d1d1d05a1fd39
-vendor/lib64/libsdmextension.so|b9586575e526d3fb41945e56a67252d454ef8768
-vendor/lib64/libsnapdragoncolor-manager.so|e7f55a1ba843bb570afa6bbf16bb61dc01ec74ea
-vendor/lib64/libsnapdragoncolor-qdcm.so|673c41753603bacb197674df567723dfd928384e
-vendor/lib64/libtinyxml2_1.so|11ceb3f1e7650c41621d47e5ec5567c8f466086e
-vendor/lib64/vendor.display.color@1.0.so|317de26d1e7a1d2d07ffa01d2a5a7528e81dffa9
-vendor/lib64/vendor.display.color@1.1.so|513cb2a853ea2e3b481df0df5408705b6d86abd9
-vendor/lib64/vendor.display.color@1.2.so|86a650b87ed1baac5e23c23c3d37ce5b20c805ae
-vendor/lib64/vendor.display.color@1.3.so|125043e43085e8fc9d52c3d94659c20f60885862
-vendor/lib64/vendor.display.color@1.4.so|57de75a5da7e7c362ca31bd0390dce7088d006fa
-vendor/lib64/vendor.display.color@1.5.so|40e5a6e0315d89ac1a9af7589ec9f384211ec3f8
-vendor/lib64/vendor.display.postproc@1.0.so|47b01ccbabd3886c04c65ddffcbfd563a5e9b63a
+vendor/lib64/vendor.display.color@1.0.so|76e84677fefbe97a0c9d33646fca2834e77a3b6f
+vendor/lib64/vendor.display.color@1.1.so|3aa79bbf7592472d87c29f91a106141eff8a9a74
+vendor/lib64/vendor.display.color@1.2.so|8b5ed3c2b39aa38f6194f2ed3872166f88b8ad98
+vendor/lib64/vendor.display.color@1.3.so|1ff2c50e6b8c0bc95f3476aa5b066024e0fc9261
+vendor/lib64/vendor.display.color@1.4.so|6e4cffe7b1a287dee9c4fb9b8e08ddac50b916b4
+vendor/lib64/vendor.display.color@1.5.so|0474d3d9123fd38538a3cd1e3c267608d71b7126
+vendor/lib64/vendor.display.postproc@1.0.so|f82e704e275c25ef27ff37cdbbfb2360e53c2611
 
 # FM
 vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
@@ -1070,7 +1057,7 @@ vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so
 
-# QCC VND HAL - from LA.UM.9.14.r1-20200.01-LAHAINA.QSSI12.0
+# QCC VND HAL - from LA.UM.9.14.r1-21000-LAHAINA.QSSI12.0
 vendor/bin/hw/vendor.qti.hardware.qccvndhal@1.0-service|72637aa6e65e77b29bf270008281d82028a5185b
 vendor/etc/init/vendor.qti.hardware.qccvndhal@1.0-service.rc|afeb332a4750a11587658fcc9a75a27f63bbccdd
 vendor/lib64/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so|56b91c2addf67315bb4d992f816fe2607a942125
