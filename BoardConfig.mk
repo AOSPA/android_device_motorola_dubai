@@ -61,6 +61,7 @@ BOARD_KERNEL_CMDLINE += firmware_class.path=/vendor/firmware_mnt/image
 BOARD_KERNEL_CMDLINE += androidboot.hab.product=dubai
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_RAMDISK_USE_LZ4 := true
+KERNEL_CUSTOM_LLVM := true
 KERNEL_DEFCONFIG := dubai-qgki_defconfig
 
 # OTA Assert
