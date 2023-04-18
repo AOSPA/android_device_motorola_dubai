@@ -161,10 +161,6 @@ vendor/firmware/msbtfw11.mbn|0f335b6aac6fc172189bc54bfc634eec9f3cc83d
 vendor/firmware/msbtfw11.tlv|d3370e79900765c193f8f689eaa96a9315f1bc53
 vendor/firmware/msnv11.bin|4992291555d24a347f3cb3e41098e0501b7b0b30
 
-# Bluetooth (aptX)
-system/lib64/libaptXHD_encoder.so
-system/lib64/libaptX_encoder.so
-
 # CDSP
 vendor/bin/cdsprpcd
 vendor/etc/init/vendor.qti.cdsprpc-service.rc
