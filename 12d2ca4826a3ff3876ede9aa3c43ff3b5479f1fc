@@ -1,4 +1,39 @@
 {
-  "comments": [],
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c9b1da95_1a0ffe24",
+        "filename": "init/init.target.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 144,
+      "author": {
+        "id": 1000469
+      },
+      "writtenOn": "2023-04-19T10:50:32Z",
+      "side": 1,
+      "message": "here",
+      "revId": "12d2ca4826a3ff3876ede9aa3c43ff3b5479f1fc",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3163235e_22d4ef74",
+        "filename": "init/init.target.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 151,
+      "author": {
+        "id": 1000469
+      },
+      "writtenOn": "2023-04-19T10:50:32Z",
+      "side": 1,
+      "message": "wrong place, this should be `on boot`",
+      "revId": "12d2ca4826a3ff3876ede9aa3c43ff3b5479f1fc",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ],
   "submitRequirementResults": []
 }
