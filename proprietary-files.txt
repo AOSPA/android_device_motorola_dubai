@@ -169,7 +169,7 @@ vendor/lib/libcdsprpc.so
 vendor/lib64/libcdsp_default_listener.so
 vendor/lib64/libcdsprpc.so
 
-# CNE - from tundra_g-user 12 S3SJ32.1-86-2 3d4dd3 release-keys
+# CNE - from tundra_g-user 12 S3SJS32.1-86-1-4 6f87e release-keys
 -vendor/app/CneApp/CneApp.apk|416225bd6e1ba3c07d908e5f7ae83f01230e251e
 vendor/bin/cnd|80fd98cc0c339c36cf5fa37900b863801fb19a42
 vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml|578f3f8f56059bfdbef926bcc68d01c15e06951f
@@ -683,7 +683,7 @@ vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc
 vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 
-# DPM - from tundra_g-user 12 S3SJ32.1-86-2 3d4dd3 release-keys
+# DPM - from tundra_g-user 12 S3SJS32.1-86-1-4 6f87e release-keys
 system/framework/tcmclient.jar|60fc12be7581c89cbdc3a5ba0526b423af492baa
 system_ext/bin/dpmd|b11102e06c7e169b3da762a0db408cb8e16d7b01
 system_ext/etc/dpm/dpm.conf|95e27da8c989e96c6faea6f0697bce11955b62a5
@@ -824,10 +824,10 @@ vendor/firmware/a630_sqe.fw
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
-# IMS (APK) - from S3SJ32.1-86-2 (modified)
+# IMS (APK) - from S3SJ32.1-86-1-4 (modified)
 -system_ext/priv-app/ims/ims.apk|9a8837c54ee39417c3262c0d04a8d9fd865154f7
 
-# IMS - from tundra_g-user 12 S3SJ32.1-86-2 3d4dd3 release-keys
+# IMS - from tundra_g-user 12 S3SJS32.1-86-1-4 6f87e release-keys
 -system_ext/app/ImsRcsService/ImsRcsService.apk|b0966a5b136357cd3b6b5ad8ddbb27289b757bac
 system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml|c56dcf1c77dba03712017fd6d2088c842e3434c0
 system_ext/framework/vendor.qti.ims.connection-V1.0-java.jar|43fbd2e3a7f46cfa2606e0997f9deed8d0d8e56e
@@ -943,7 +943,7 @@ vendor/etc/media_yupik_v1/video_system_specs.json
 vendor/lib/libmmosal.so
 vendor/lib64/libmmosal.so
 
-# Motorola Telephony - from tundra_g-user 12 S3SJ32.1-86-2 3d4dd3 release-keys
+# Motorola Telephony - from tundra_g-user 12 S3SJS32.1-86-1-4 6f87e release-keys
 system/etc/permissions/moto-telephony.xml:system_ext/etc/permissions/moto-telephony.xml|b838a7880f5f4470e5b3d38fdff9616ed56a4ce6
 system/framework/moto-telephony.jar:system_ext/framework/moto-telephony.jar|2e9d2df391a4a669e32fdf980c804f7a67617f61
 
@@ -1032,7 +1032,7 @@ vendor/lib64/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so|56b91c2addf67315bb4d99
 vendor/lib64/vendor.qti.hardware.qccvndhal@1.0-halimpl.so|2300432c529a9d4905b76a013276a3dff1ab9803
 vendor/lib64/vendor.qti.hardware.qccvndhal@1.0.so|26f7c4d097a7e21ef62f9218e0ccebc5cab00a3f
 
-# QCRIL - from tundra_g-user 12 S3SJ32.1-86-2 3d4dd3 release-keys
+# QCRIL - from tundra_g-user 12 S3SJS32.1-86-1-4 6f87e release-keys
 -product/app/uimgbaservice/uimgbaservice.apk|83e9ebb2a16a42a41088c8d1a036efd79742e590
 product/etc/permissions/UimGba.xml|03eb0916550720f168c4f66acdc3fc4abf9993ef
 product/etc/permissions/UimGbaManager.xml|b57f4d048d860d27367df0f0feee6cc78991dfe3
@@ -1140,17 +1140,17 @@ vendor/lib64/libnetmgr_rmnet_ext.so|5e947bd1da782b8702f447e8dff012deaede3e10
 vendor/lib64/libnlnetmgr.so|6bb49186cc8bbff7992b417c2d26557ecb5a7944
 vendor/lib64/libpdmapper.so|2669e3ac50a77572f54bba54b1470a529e617e3b
 vendor/lib64/libpdnotifier.so|7badf4698947a848914b86e960757bb3d93d9f11
-vendor/lib64/libqcrilNr.so|476bdd8b9aeaebef69cc17ea47016bbbdc2a1f2a
-vendor/lib64/libqcrilNrFramework.so|903b0925db5095b9f4b1801c62831d26e3c3510d
+vendor/lib64/libqcrilNr.so|6e13de5250aa1a735c53119351572bee11bfe4ab
+vendor/lib64/libqcrilNrFramework.so|0fae484ec35fa834fdfaa7f0b67dc8c71e59883e
 vendor/lib64/libqcrilNrLogger.so|dbf0888fe63a969ad847de7f589fddc976f0d650
-vendor/lib64/libqcrilNrQtiBus.so|d33802ed13359fbfc4c57b6cdcf0cc81ba594da0
-vendor/lib64/libqcrilNrQtiMutex.so|e22c9921723b1aeb4b864ed974f4ae66bed0354e
+vendor/lib64/libqcrilNrQtiBus.so|9429ad4311cd0e81bc3bd9eb532dc8cbd42aba19
+vendor/lib64/libqcrilNrQtiMutex.so|f9dba2073ce38f98095cc9042b93af6b4f10f8d2
 vendor/lib64/libqcrildatactl.so|018737d0c114fcbb50d0a7db34549a7176822b5a
 vendor/lib64/libqmimotext.so|556e430cf561843d380e5d6363a8069ebfb5f143
 vendor/lib64/libqrtr.so|e3976e7b09a38436681f845d605117a989bac673
 vendor/lib64/libqrtrclient.so|51c55fea28fa475ae9b2c64592f32802e6ba6c25
 vendor/lib64/libqsocket.so|33a8eb5de39e3d4d6f1d6f4bf1663429763bacbc
-vendor/lib64/libril-db.so|09a9fd4088c3c68da22c7ae5cf19dfb7e79a3348
+vendor/lib64/libril-db.so|636826de1051fc2d31a2e136f0e8113d29b24900
 vendor/lib64/libril-qc-ltedirectdisc.so|40aaf6100d0bd95e8e0b19bee3b3fef28718816b
 vendor/lib64/libril-qc-radioconfig.so|817c3338bfcc963a464623cef4065e8311d2641c
 vendor/lib64/libril-qcril-hook-oem.so|09888a7f8a66d28ae07078095c4ee93355e632c3
@@ -1159,7 +1159,7 @@ vendor/lib64/librilqmiservices.so|a2724a3b9906ccdf75101e6c454c269c3a30e575
 vendor/lib64/libsystem_health_mon.so|edb96e2d96bb33f81cad2d0e256040608314fc8d
 vendor/lib64/qcrilMarshal.so|6fef90a1ce7e8111861fe290df20a7645deb5309
 vendor/lib64/qcrild_libqcrilnrutils.so|df6530cc166b2783bd3123886d46292cc7fb1146
-vendor/lib64/qtiril-utils.so|aa64c5271984c31a33b6811c8b103f056588e8ac
+vendor/lib64/qtiril-utils.so|379b4a015c9a41a4007eb4389cb192d80926ff43
 vendor/lib64/qtiwakelock.so|c109641fc7e75ac3a9689ed6c4272de47f613357
 vendor/lib64/vendor.qti.hardware.embmssl@1.0-adapter-helper.so|efe4d10dc4349e27bc0941b5f9b2c2aca1cea902
 vendor/lib64/vendor.qti.hardware.embmssl@1.0.so|33bb0c7e24b04e368a7bd8ae955b8f14242e7c22
@@ -1199,7 +1199,7 @@ vendor/lib64/vendor.qti.qesdhal@1.0.so
 vendor/lib64/vendor.qti.qesdhal@1.1-impl.so
 vendor/lib64/vendor.qti.qesdhal@1.1.so
 
-# QMI - from tundra_g-user 12 S3SJ32.1-86-2 3d4dd3 release-keys
+# QMI - from tundra_g-user 12 S3SJS32.1-86-1-4 6f87e release-keys
 system/etc/permissions/privapp-permissions-qti.xml|e928e890c7e8cddf74941ce121e957c381147400
 system/etc/sysconfig/qti_whitelist.xml|237b63df7c6930dcfdf8912c2792a76a37868f34
 system_ext/etc/sysconfig/qti_telephony_system_packages_config.xml|b8ea753b3e2181d6b1ac4fff365fee926f37b930
