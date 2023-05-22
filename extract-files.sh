@@ -58,11 +58,14 @@ function blob_fixup() {
         system_ext/lib64/libwfdnative.so)
             ${PATCHELF} --remove-needed "android.hidl.base@1.0.so" "${2}"
             ;;
-        system_ext/etc/permissions/moto-telephony.xml)
+        system_ext/etc/permissions/moto-ims-ext.xml|system_ext/etc/permissions/moto-telephony.xml)
             sed -i "s#/system/#/system_ext/#" "${2}"
             ;;
         vendor/etc/vintf/manifest/vendor.dolby.media.c2@1.0-service.xml)
             sed -ni '/default1/!p' "${2}"
+            ;;
+        vendor/lib64/libmot_chi_desktop_helper.so)
+            ${PATCHELF} --replace-needed "libgui_vendor.so" "libgui_shim_vendor.so" "${2}"
             ;;
     esac
 }

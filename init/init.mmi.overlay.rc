@@ -42,7 +42,7 @@ on early-boot
     chown system system /dev/esfp0
     chmod 0664 /dev/esfp0
 
-on boot
+on property:sys.boot_completed=1
     # allow TCMD to access cci for OIS test
     chmod 0660 /dev/cci_intf
     chown system camera /dev/cci_intf
