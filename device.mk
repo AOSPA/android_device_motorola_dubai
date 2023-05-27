@@ -149,6 +149,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3.so.vendor
 
+# Firmware
+$(call inherit-product-if-exists, vendor/motorola/firmware/dubai/config.mk)
+
 # FM
 BOARD_HAVE_QCOM_FM := false
 
