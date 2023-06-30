@@ -10,6 +10,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/compression.mk)
 PRODUCT_PACKAGES += \
     update_engine \
     update_engine_client \
+    update_engine_sideload \
     update_verifier \
     android.hardware.boot@1.2-impl-qti \
     android.hardware.boot@1.2-impl-qti.recovery \
