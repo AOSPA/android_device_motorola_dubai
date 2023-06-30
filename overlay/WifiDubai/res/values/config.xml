@@ -29,4 +29,8 @@
 
     <!-- WiFi chipset has 6GHz band support -->
     <bool name="config_wifi6ghzSupport">true</bool>
+
+    <!-- Default access point SSID used for tethering -->
+    <string name="wifi_tether_configure_ssid_default" translatable="false">motorola edge 30</string>
+
 </resources>
