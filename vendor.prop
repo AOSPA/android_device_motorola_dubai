@@ -42,6 +42,9 @@ ro.surface_flinger.use_content_detection_for_refresh_rate=true
 # Enable incremental fs
 ro.incremental.enable=yes
 
+# Fuse Passthrough
+persist.sys.fuse.passthrough.enable=true
+
 # Google
 ro.opa.device_model_id=motorola-dubai
 ro.opa.eligible_device=true
