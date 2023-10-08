@@ -1234,9 +1234,7 @@ vendor/lib64/vendor.qti.hardware.secureprocessor.device@1.0.so
 
 # SecureMSM (SECDISP)
 vendor/bin/hw/vendor.qti.hardware.trustedui@1.0-service-qti
-vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
 vendor/etc/init/vendor.qti.hardware.trustedui@1.0-service-qti.rc
-vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
 vendor/lib64/libTouchInputVM.so
 vendor/lib64/libTrustedInput.so
 vendor/lib64/libTrustedInputTZ.so
@@ -1248,7 +1246,6 @@ vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 vendor/lib64/vendor.qti.hardware.trustedui@1.0.so
 vendor/lib64/vendor.qti.hardware.trustedui@1.1.so
 vendor/lib64/vendor.qti.hardware.trustedui@1.2.so
-vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 
 # Sensor (Configs)
 vendor/etc/sensors/config/icm4x6xx.json
