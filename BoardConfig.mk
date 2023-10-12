@@ -75,7 +75,6 @@ KERNEL_DEFCONFIG := dubai-qgki_defconfig
 TARGET_OTA_ASSERT_DEVICE := dubai
 
 # Partitions
-BOARD_BUILD_SYSTEM_ROOT_IMAGE := false
 BOARD_BUILD_VENDOR_RAMDISK_IMAGE := true
 
 # Partitions - A/B
