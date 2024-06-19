@@ -16,6 +16,23 @@
       "message": "but why?\nonly import those you are modifying",
       "revId": "4e446cf7d486cda0aeb843417213d03ffdaef324",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a0dcb036_f354acdf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000845
+      },
+      "writtenOn": "2024-06-19T13:41:13Z",
+      "side": 1,
+      "message": "please fix typo in commit message",
+      "revId": "4e446cf7d486cda0aeb843417213d03ffdaef324",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
