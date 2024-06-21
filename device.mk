@@ -103,6 +103,13 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.postproc@1.0.vendor \
     DubaiCameraService
 
+# Certified Props
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/config-system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/overlay/config/config.xml
+
+PRODUCT_PACKAGES += \
+    CertifiedPropsOverlay
+
 # Dalvik
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
