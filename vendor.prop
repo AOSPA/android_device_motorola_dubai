@@ -5,18 +5,12 @@ audio.offload.min.duration.secs=60
 audio.offload.video=false
 media.aac_51_output_enabled=true
 
-# CNE
-persist.vendor.cne.feature=1
-
 # Charger
 ro.charger.enable_suspend=1
 
 # Crypto
 ro.crypto.dm_default_key.options_format.version=2
 ro.crypto.volume.metadata.method=dm-default-key
-
-# DPM
-persist.vendor.dpm.feature=11
 
 # Data
 persist.data.df.agg.dl_pkt=10
@@ -52,25 +46,15 @@ ro.opa.eligible_device=true
 debug.hwui.skia_atrace_enabled=false
 
 # IMS
-persist.dbg.volte_avail_ovr=1
-persist.dbg.vt_avail_ovr=1
-persist.dbg.wfc_avail_ovr=1
 ro.qcom.ims.use_moto_vt_ext=true
 
 # Media
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 ro.media.recorder-max-base-layer-fps=60
 
-# Netmgrd
-persist.vendor.data.mode=concurrent
-ro.vendor.use_data_netmgrd=true
-
 # qteeconnector settings
 persist.vendor.qteeconnector.retrying_interval=30
 persist.vendor.qteeconnector.retrying_timeout=2000
-
-# Radio
-ro.telephony.default_network=33,33
 
 # RTT
 config.disable_rtt=true
@@ -80,9 +64,6 @@ vendor.gatekeeper.disable_spu=true
 
 # Sensors
 persist.vendor.sensors.enable.mag_filter=true
-
-# SSR
-persist.vendor.ssr.restart_level=ALL_ENABLE
 
 # Vendor
 ro.vendor.qti.va_aosp.support=1

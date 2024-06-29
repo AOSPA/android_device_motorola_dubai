@@ -23,9 +23,6 @@ persist.data.df.iwlan_mux=9
 persist.data.df.mux_count=8
 persist.data.df.ul_mode=5
 
-# DPM
-persist.vendor.dpm.feature=11
-
 # HWUI
 debug.hwui.skia_atrace_enabled=false
 
@@ -35,13 +32,6 @@ ro.opa.eligible_device=true
 
 # IMS
 ro.qcom.ims.use_moto_vt_ext=true
-
-# Netmgrd
-persist.vendor.data.mode=concurrent
-ro.vendor.use_data_netmgrd=true
-
-# Radio
-ro.telephony.default_network=33,33
 
 # RTT
 config.disable_rtt=true

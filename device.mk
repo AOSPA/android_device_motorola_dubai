@@ -113,9 +113,6 @@ PRODUCT_PACKAGES += \
 # Dalvik
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
-# Data Services
-$(call inherit-product, vendor/qcom/opensource/dataservices/dataservices_vendor_product.mk)
-
 # Display
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/display/display_id_4630947043778501762.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947043778501762.xml
@@ -217,16 +214,6 @@ PRODUCT_PACKAGES += \
     init.qti.chg_policy.sh \
     init.qti.qcv.sh
 
-# IPACM
-PRODUCT_SOONG_NAMESPACES += vendor/qcom/opensource/data-ipa-cfg-mgr-legacy
-$(call inherit-product, vendor/qcom/opensource/data-ipa-cfg-mgr-legacy/ipacm_vendor_product.mk)
-
-PRODUCT_PACKAGES += \
-    ipacm \
-    IPACM_cfg.xml \
-    libipanat \
-    liboffloadhal
-
 # Keymaster
 PRODUCT_PACKAGES += \
    android.hardware.keymaster@4.1 \
@@ -276,7 +263,6 @@ PRODUCT_PACKAGES += \
     SettingsResDubai \
     SettingsProviderResDubai \
     SystemUIResDubai \
-    TelephonyResDubai \
     WifiResTargetDubai \
     WifiResTargetMainline
 
@@ -297,10 +283,6 @@ PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/perf/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
 
-# QMI
-PRODUCT_PACKAGES += \
-    libjson
-
 # QTI Components
 TARGET_COMMON_QTI_COMPONENTS += \
     adreno \
@@ -314,26 +296,15 @@ TARGET_COMMON_QTI_COMPONENTS += \
     overlay \
     perf \
     qseecomd \
+    telephony \
     usb \
     vibrator \
     wfd \
     wlan
 
 # RIL
-ENABLE_VENDOR_RIL_SERVICE := true
-
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.ipsec_tunnels.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.ipsec_tunnels.xml
-
-PRODUCT_PACKAGES += \
-    android.hardware.radio@1.5.vendor \
-    android.hardware.radio.config@1.2.vendor \
-    android.hardware.radio.deprecated@1.0.vendor \
-    android.hardware.wifi.hostapd@1.0.vendor \
-    android.system.net.netd@1.1.vendor \
-    libprotobuf-cpp-full \
-    librmnetctl \
-    libxml2
 
 # Screen
 TARGET_SCREEN_DENSITY := 400
@@ -358,16 +329,6 @@ PRODUCT_PACKAGES += \
 
 # Storage
 PRODUCT_CHARACTERISTICS := nosdcard
-
-# System Helper
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.systemhelper@1.0.vendor
-
-# Telephony
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.telephony.cdma.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.cdma.xml \
-    frameworks/native/data/etc/android.hardware.telephony.gsm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.gsm.xml \
-    frameworks/native/data/etc/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.ims.xml
 
 # Thermal
 PRODUCT_PACKAGES += \
