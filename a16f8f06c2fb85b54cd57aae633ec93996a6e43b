@@ -16,6 +16,24 @@
       "message": "https://github.com/AOSPA/android_hardware_motorola/blob/e343c9b85d8dbeb6fe29fee952191c003acf9e40/overlay/MotoSystemUIResUDFPS/res/values/config.xml#L11\n\nfix this instead https://gerrit.aospa.co/q/I79ecd91513df0d195e1d15d20b4438d1b283743f",
       "revId": "a16f8f06c2fb85b54cd57aae633ec93996a6e43b",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f1b1712b_1419137f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1001023
+      },
+      "writtenOn": "2024-07-01T07:58:05Z",
+      "side": 1,
+      "message": "Alright, will do.",
+      "parentUuid": "e15a79a4_cd3767b5",
+      "revId": "a16f8f06c2fb85b54cd57aae633ec93996a6e43b",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
