@@ -156,8 +156,6 @@ vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 
 # Camera
-vendor/etc/pwr/PowerFeatureConfig.xml
-vendor/etc/pwr/VideoPowerOptFeature.xml
 vendor/lib/camera/fdconfigpreview.bin
 vendor/lib/camera/fdconfigpreviewlite.bin
 vendor/lib/camera/fdconfigvideo.bin
@@ -231,7 +229,6 @@ vendor/lib/libofflinelog.so
 vendor/lib/libopencv.so
 vendor/lib/libopestriping.so
 vendor/lib/libos.so
-vendor/lib/libpowercore.so
 vendor/lib/libqll10.so
 vendor/lib/libqllengine.so
 vendor/lib/libremosaic_wrapper.so
@@ -327,7 +324,6 @@ vendor/lib64/libofflinelog.so
 vendor/lib64/libopencv.so
 vendor/lib64/libopestriping.so
 vendor/lib64/libos.so
-vendor/lib64/libpowercore.so
 vendor/lib64/libqll10.so
 vendor/lib64/libqllengine.so
 vendor/lib64/libremosaic_wrapper.so
@@ -849,10 +845,6 @@ vendor/lib64/liblistensoundmodel2.so
 vendor/lib64/libmulawdec.so
 
 # Media
-system_ext/lib/libmmosal.so
-system_ext/lib/libmmparser_lite.so
-system_ext/lib64/libmmosal.so
-system_ext/lib64/libmmparser_lite.so
 vendor/etc/media/video_system_specs.json
 vendor/etc/media_yupik_v0/video_system_specs.json
 vendor/etc/media_yupik_v1/video_system_specs.json
@@ -1096,7 +1088,6 @@ vendor/bin/qmipriod|d859025d63fe1facb3273309ed078c9b056f7b5c
 vendor/etc/init/qmipriod.debug.rc|94d421875f35fdcb170070f20a221466ad87f97e
 vendor/etc/init/qmipriod.rc|94500dd5dc514fbb506ad8259a69ca57f4db72d6
 vendor/etc/seccomp_policy/qti-systemd.policy|40bf52fb50a94eb8325beefe1927d9ba155fb02a
-vendor/lib/libdiag.so|72fbcd7bf5f8ebb20d356adcfa6f53276c4dfcc8
 vendor/lib/libdsi_netctrl.so|3c6c84f8b5969e04c200d1bf3bc85cfa80fa4754
 vendor/lib/libdsutils.so|bffa48f2eb280c9dbc7f71d22010e52db2f84f32
 vendor/lib/libidl.so|74f4fc585d1a1bdffc9c3b8573231e8b89307dbd
@@ -1119,7 +1110,6 @@ vendor/lib/libqrtr.so|390b8f5c47d79d5ddfde4914d882c9b3efbd78f9
 vendor/lib/libqsocket.so|ee42688575b17068112f540fe061ac00c3fc708a
 vendor/lib/libsmemlog.so|cfecb0f41b8ef4a612fb84936f4203ee5241a3e2
 vendor/lib/libsystem_health_mon.so|793bec0ed32fd2999ff63f847403e38a2c43f278
-vendor/lib64/libdiag.so|f84c0df01cdc3bce5f7a33e8ede438f0944b4c08
 vendor/lib64/libdsi_netctrl.so|7e22c60cb30098e43e6c9861203ab92221734508
 vendor/lib64/libdsutils.so|8b7dffe93ed6ce920b2753fa72fba9ce191200a0
 vendor/lib64/libidl.so|eb4aff2ab397f4071234a47706846a6d98202de5
@@ -1147,9 +1137,6 @@ vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so
 vendor/lib64/libspl.so
 vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
-
-# QSPM
-vendor/etc/seccomp_policy/qspm.policy
 
 # SecureMSM (EID)
 vendor/bin/hw/vendor.qti.hardware.eid@1.0-service
